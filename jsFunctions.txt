@@ -1,0 +1,31 @@
+a();
+// b(); will give error nothings saved in it as per hoisting
+
+// function statement or declaration
+function a() {
+  console.log("a function");
+}
+
+// function declaration
+var b = function () {
+  console.log("b function");
+}
+
+b();      // this will work because we called it after going through all the lines necessary
+
+// anonymouse functions
+// a function which does not have a name like in line 10
+
+// named function expression
+var c = function named() {
+  console.log("This is a named function");
+}
+c();
+// named() function will not work because it is still not defined 
+
+// parameters and arguments
+// parameters: function xyz(param1, param2) {}
+// arguments: xys(param1, param2);
+
+// first class functions (or citizens)
+// the ability of functions as a value by functions is called first class functions
