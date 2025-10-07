@@ -1,10 +1,12 @@
 # Development things I am learning/practicing
 
 Learning development things here
+
 Keeping a track of stuff from a [roadmap site](https://roadmap.sh/u/krishnadeshpande)
 
 ## Javascript 
 Got down the basics from [Akshay Saini](https://www.youtube.com/playlist?list=PLxnjbfm5MCHFbRlyVCAqpJFdIzPN_IPID)
+
 Doing the remaining stuff from [roadmap](https://roadmap.sh/javascript)
 
 ## Typescript
