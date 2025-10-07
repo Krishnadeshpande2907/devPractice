@@ -7,7 +7,7 @@ Keeping a track of stuff from a [roadmap site](https://roadmap.sh/u/krishnadeshp
 ## Javascript 
 Got down the basics from [Akshay Saini](https://www.youtube.com/playlist?list=PLxnjbfm5MCHFbRlyVCAqpJFdIzPN_IPID)
 
-Doing the remaining stuff from [roadmap](https://roadmap.sh/javascript)
+Doing the remaining stuff from the [roadmap for JS](https://roadmap.sh/javascript)
 
 ## Typescript
 Learning from [Mosh](https://www.youtube.com/watch?v=d56mG7DezGs)
