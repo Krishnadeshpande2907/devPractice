@@ -47,3 +47,46 @@ let number = [];
 
 
 // tuples
+// we can tell the compiler that an array will have a fixed number of elements
+// whose types are known
+
+// fixed length array where each element is of a particular type
+
+let user: [number, string] = [1, "Mosh"];
+// user = [1, 2]          // invalid
+// user = [1, "Mosh", true]   // invalid
+// you can access the methods of number object on user[0]
+// and access the methods of string object on user[1]
+
+// on compilation, tuples are converted to normal arrays in js files
+
+
+// enums
+// enums are a way of giving more friendly names to sets of numeric values
+// example:
+const small = 1;
+const medium = 2;
+const large = 3;
+
+// instead of this we can use enums
+enum Size { Small = 1, Medium, Large };
+// by default, the first value is 0, second is 1 and so on
+// if we set Small = 1, then Medium would be 2 and Large would be 3 and so on
+// if we set Small = 1 and Large = 3, then Medium would be 2
+
+// we can also set string values to enums
+// example:
+// enum Size { Small = "s", Medium = "m", Large = "l" };
+// in this case, we have to set values for all the enum members
+
+let mySize: Size = Size.Medium;
+console.log(mySize);           // would print 2
+
+// if we use 'const enum' instead of 'enum', it would make the enum members as constants
+// and would remove the enum declaration during compilation
+// and would replace the enum members with their values
+// this would reduce the javascript file size and generate an optimized code
+// example:
+const enum Size1 { Small = 1, Medium, Large };
+let mySize1: Size1 = Size1.Medium;
+console.log(mySize1);          // would print 2
