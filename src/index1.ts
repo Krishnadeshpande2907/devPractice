@@ -90,3 +90,32 @@ console.log(mySize);           // would print 2
 const enum Size1 { Small = 1, Medium, Large };
 let mySize1: Size1 = Size1.Medium;
 console.log(mySize1);          // would print 2
+
+
+
+// functions
+
+// we can specify the type of each parameter and the return type of the function
+// if we don't specify the return type, it would be considered as 'void' type
+// the compiler would infer the return type based on the return statements in the function 
+// if nothing is specified
+
+function calculateTax(income: number, taxYear: number): number {
+    if (taxYear < 2022)
+        return income * 1.2;
+    return income * 1.3;
+}
+
+// in tsconfig file, we have a setting called 'noUnusedParameters'
+// if it is set to true, then the compiler would give an error 
+// if there are any unused parameters in a function
+// to avoid that, we can use '_' before the parameter name
+
+// if in a function we add return if true but don't add return if false, 
+// then the compiler would give an error
+// because js would return undefined in that case
+
+// in tsconfig file, we have a setting called 'noImplicitReturns'
+// if it is set to true, then the compiler would give an error if there are any code paths that do not return a value
+// another setting is 'noUnusedLocals'
+// if it is set to true, then the compiler would give an error if there are any unused local variables

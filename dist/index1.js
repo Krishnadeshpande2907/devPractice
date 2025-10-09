@@ -38,4 +38,9 @@ var Size1;
 ;
 let mySize1 = Size1.Medium;
 console.log(mySize1);
+function calculateTax(income, taxYear) {
+    if (taxYear < 2022)
+        return income * 1.2;
+    return income * 1.3;
+}
 //# sourceMappingURL=index1.js.map
