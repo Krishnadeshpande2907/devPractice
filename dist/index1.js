@@ -1,4 +1,5 @@
 "use strict";
+var _a, _b, _c;
 Object.defineProperty(exports, "__esModule", { value: true });
 let age = 20;
 if (age > 18) {
@@ -43,4 +44,65 @@ function calculateTax(income, taxYear) {
         return income * 1.2;
     return income * 1.3;
 }
+function calculateTax1(income, taxYear) {
+    if ((taxYear || 2022) < 2022)
+        return income * 1.2;
+    return income * 1.3;
+}
+calculateTax1(10000);
+calculateTax1(10000, 2021);
+function calculateTax2(income, taxYear = 2022) {
+    if (taxYear < 2022)
+        return income * 1.2;
+    return income * 1.3;
+}
+calculateTax2(10000);
+calculateTax2(10000, 2021);
+let employee = {
+    id: 1,
+    name: "Mosh",
+    retire: (date) => {
+        console.log(date);
+    }
+};
+employee.name = "John";
+employee.retire(new Date());
+let employee1 = {
+    id: 1,
+    name: "Mosh",
+    retire: (date) => {
+        console.log(date);
+    }
+};
+let weight;
+weight = 10;
+weight = "10 kg";
+function kgToLbs(weight) {
+    if (typeof weight === "number")
+        return weight * 2.2;
+    else
+        return parseInt(weight) * 2.2;
+}
+let textBox = {
+    drag: () => { },
+    resize: () => { }
+};
+let quantity = 100;
+function greet(name) {
+    if (name)
+        console.log(name.toUpperCase());
+    else
+        console.log("Hola!");
+}
+greet(null);
+greet(undefined);
+function getCustomer(id) {
+    return id === 0 ? null : { birthday: new Date() };
+}
+let customer = getCustomer(1);
+console.log((_a = customer === null || customer === void 0 ? void 0 : customer.birthday) === null || _a === void 0 ? void 0 : _a.getFullYear());
+let customers = [];
+console.log((_c = (_b = customers === null || customers === void 0 ? void 0 : customers[0]) === null || _b === void 0 ? void 0 : _b.birthday) === null || _c === void 0 ? void 0 : _c.getFullYear());
+let log = null;
+log === null || log === void 0 ? void 0 : log("a");
 //# sourceMappingURL=index1.js.map
