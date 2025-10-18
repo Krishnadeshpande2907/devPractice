@@ -10,7 +10,9 @@ Got down the basics from [Akshay Saini](https://www.youtube.com/playlist?list=PL
 Doing the remaining stuff from the [roadmap for JS](https://roadmap.sh/javascript)
 
 ## Typescript
-Learning from [Mosh](https://www.youtube.com/watch?v=d56mG7DezGs)
+Got down the basics from [Mosh](https://www.youtube.com/watch?v=d56mG7DezGs)
+
+Doing the remaining stuff from the [roadmap for TS](https://roadmap.sh/typescript)
 
 ## Angular
 Would start learning from a [Udemy Course](https://www.udemy.com/course/the-complete-guide-to-angular-2/?)
